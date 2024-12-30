@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跨年邀請網站</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            color: #fff;
+        }
+        .timetaco-container {
+            flex: 1; /* 占據可用空間 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container {
+            flex: 1; /* 下方圖片區塊同樣占據一半螢幕高度 */
+            background: url('2024to2025_background.jpg') no-repeat center center;
+            background-size: cover; /* 確保圖片填滿區域 */
+        }
+    </style>
+</head>
+<body>
+    <div class="timetaco-container">
+        <script>
+            (function(d, s, id) {
+                var js, timetacojs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://www.timetaco.com/static/js/embed.js';
+                timetacojs.parentNode.insertBefore(js, timetacojs);
+            }(document, 'script', 'timetaco-jssdk'));
+        </script>
+        <div class="timetaco-list" data-timetacoid="xwggtj"></div>
+    </div>
+    <div class="image-container"></div>
+</body>
+</html>
